@@ -1,0 +1,54 @@
+#cows
+{
+    background-color: pink;
+    color: red;
+    text-align: right;
+}
+
+
+
+.fancyBold
+{
+font-weight:bolder;
+font-style:italic;
+font-family:sans-serif;
+color:black;
+}
+
+.important
+{
+color:red;
+text-align:center;
+}
+
+
+
+h1, h2, .centered
+{
+    color:green;
+}
+
+li.important
+{
+  color:purple;
+}
+
+p.important
+{
+  color:green;
+  text-align:center;
+}
+
+
+.important p
+{
+   text-align:center;
+   color:blue;
+}
+
+
+.important > p
+{
+text-align:center;
+color:orange;
+}

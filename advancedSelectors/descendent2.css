@@ -1,0 +1,31 @@
+body{
+font-size: 24pt;
+}
+h1{
+text-align: center;
+color:blue;
+}
+body > h1{
+color: red;
+}
+.underline{
+text-decoration: underline;
+text-decoration-style: wavy;
+text-decoration-color: purple;
+}
+.fancy{
+text-shadow: 1px 1px blue;
+}
+.one{
+background-color: lightblue;
+}
+ol li em {
+color:red;
+}
+h4, h5, ul{
+color:green;
+}
+body p{
+color:red;
+}
+

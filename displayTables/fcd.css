@@ -1,0 +1,64 @@
+h1, h2
+{
+  text-align:center;
+}
+
+.smallerImage
+{
+  width:25%;
+  border:1px green solid;
+  margin:1em;
+}
+
+.leftFloat
+{
+  float:left;
+}
+
+.stopLeftFloat
+{
+  clear:left;
+}
+
+.makeBlock
+{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.makeInline
+{
+  display:inline-block;
+  border:red 2px solid;
+  width:100px;
+}
+
+.divTable
+{
+  display:table;
+  margin-left:auto;
+  margin-right:auto;
+  border:2px black solid;
+}
+
+.divTableRow
+{
+  display:table-row;
+}
+
+.divTableCell
+{
+  display:table-cell;
+  padding:10px 0px 10px 0px;
+  border:gold 5px solid;
+  width:200px;
+  text-align:center;
+}
+
+.specialColor
+{
+  background-color:purple;
+  color:white;
+  font-weight:bold;
+}

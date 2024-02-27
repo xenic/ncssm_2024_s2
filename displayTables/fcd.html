@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tag Lab with CSS</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="fcd.css"/>
+</head>
+<body>
+  <h1>Examples for Float, Clear and Display</h1>
+  <p>We start with this example, where this image is set into the middle of the paragraph. <img class="smallerImage" src="happyAl.jpg" alt="Happy Aligator"/>The text shows up on both sides of it, but it doesn't look great.</p>
+
+  <h3>Float and clear</h3>
+
+  <p>I use a class to let it float left <img class="leftFloat smallerImage" src="happyAl.jpg" alt="Happy Aligator"/> and it does, with all the text on the right even the the image is in the middle of the pargraph. I specified two styles (one for sizing and formatting the image, the other for specifying float) and used a compound class to apply them both to this image.</p>
+
+  <pre>
+    .smallerImage
+    {
+      width:25%;
+      border:1px green solid;
+      margin:1em;
+    }
+
+    .leftFloat
+    {
+      float:left;
+    }
+
+    In the HTML: class="leftFloat smallerImage"
+  </pre>
+
+  <p>This next paragraph is also floating around the image. It has no tags.</p>
+
+  <p class = "stopLeftFloat">But I assigned a class with <code>clear:left;</code> to this one so the wrapping has stopped. More typically I'd apply the class to a div rather than a single paragraph.</p>
+
+  <pre>
+    .stopLeftFloat
+    {
+      clear:left;
+    }
+  </pre>
+
+  <h3>Display to change block level and inline</h3>
+  <p>This image is set to display as a block level image using the <code>Display</code> property even though and image is an inline element. <img class="makeBlock smallerImage" src="happyAl.jpg" alt="Happy Aligator"/> Notice the text is above and below and not left or right.with this paragraph because of the code I used to center images generally.</p>
+
+  <pre>
+  .makeBlock
+  {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</pre>
+
+<div><p>This paragraph is in a div element.</p></div>
+
+<div><p>As is this one. Divs (and paragraphs) are block level and so have their own space vertically.</p></div>
+
+<div class="makeInline"><p>But I can use the <code>Display</code> property to change it to an <code>inline-block</code> element so they show up side-to-side, as if they are inline. </p></div>
+
+<div class="makeInline"><p>I threw in a border and width so you can actually see the Divs. This is cool becuase the Divs can hold a variety of elements. </p></div>
+
+<div class="makeInline"><p>This is another way to make things show up left and right. The text lines up but What's going on witht the box?</p></div>
+
+<h3>Display tables</h3>
+<p>There are a variety of <code>Display</code>formats. Three of importance to us are</p>
+<ul>
+  <li><code>table</code>: Assumes the associated div is going to hold rows or columns and table cells.</li>
+  <li><code>table-row</code>: Acts like the <code>tr</code>tag and assumes the associate div will hold cells of a table. There is a <code>table-column</code> style as well.</li>
+  <li><code>table-cell</code>: Is used to indicate the associate div will act like a table cell, similer to the <code>td</code> tag.</li>
+</ul>
+
+<p>In my CSS file I will create classes that assing these styles to the display property. I could choose to also add some formatting and handle things associate with the box model.</p>
+
+<pre>
+  .divTable
+  {
+    display:table;
+    margin:1em;
+    border:2px black solid;
+  }
+
+  .divRow
+  {
+    display:table-row;
+  }
+
+  .divCell
+  {
+    display:table-cell;
+    width:200px;
+    padding:1em;
+    border:1px black solid;
+  }
+</pre>
+
+<p>I can then make a table entirely out of Divs. Why? Because modern elements in divs are more flexible and accesible by Javascript. A table is still great for an actual table showing a tableau of data, but flexibility in format and access is better with "display tables".</p>
+
+<div class="divTable">
+  <div class="divTableRow">
+    <div class="divTableCell">
+      <p>Finally I get to put something in this cell.</p>
+    </div>
+    <div class="divTableCell">
+      <p>Cut and paste become important when doing this.</p>
+    </div>
+    <div class="divTableCell">
+      <p>Over and over for this row.</p>
+    </div>
+  </div>
+  <div class="divTableRow">
+    <div class="divTableCell">
+      <p>Bigger copy and paste lets me do the next row.</p>
+    </div>
+    <div class="divTableCell">
+      <p>With its cells</p>
+    </div>
+    <div class="divTableCell specialColor">
+      <p>This may look a little bleak, but add some color and it works out fine! I use a compound class specification.</p>
+    </div>
+  </div>
+</div>
+
+<p>Try using these techniques to create a menu for Pete's Pizza Parlour.</p>
+
+</body>
+</html>

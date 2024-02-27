@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Advanced Selectors</title>
+        <link rel="stylesheet" href="css/advancedSelectors.css">
+        <link rel="shortcut icon" type="image/x-icon" href="images/ncssm_favicon.ico" />
+    </head>
+    <body>
+        <h1>Advanced Selectors</h1>
+
+        <p id="cows"> We bovines choose to ruminate at length on our meals. It affords us the opportunity to bring up a pleasing subject again.</p>
+
+        <p id="cows"> Feral Cows - don't do this... 2 of the same id </p>
+
+        
+        <p class="important">Make sure you see this!</p>
+
+        <ul class="important">
+            <li class="important fancyBold">Your text here</li>
+        </ul>
+
+
+        <p class="important">This gets whatever default paragraph formatting is present or to any selector with "p" separated by commas</p>
+
+        <div class="important">
+            <p>This will be colored red and centered. Note I did not have to specify "important" for the paragraph</p>
+        </div>
+
+        <div class="important">
+            <p>This will be colored red and centered. Note I did not have to specify "important" for the paragraph</p>
+        </div>
+        
+        <div class="important">
+           <div class="bigThought">
+              <p>P not a direct decendent of .important</p>
+           </div>
+           <p>I am also going to get "important" formatting.</p>
+        </div>
+        
+
+        <footer>
+            <h3>
+                <p>This has been a CS4020 Presentation.</p>
+            </h3>
+        </footer>
+    </body>
+</html>
