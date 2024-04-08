@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="sketchySanitation.js"></script>
+    </head>
+    <body>
+        <p onclick="youClickedMe();">Sanitation Grade <span id="score">99</span></p>
+        <button onclick="raiseScore();">Raise Score</button>
+        <button onclick="lowerScore();">Lower Score</button>
+        <div>
+            <input name="Score" type="checkbox" value="1">Value?
+            <input name="Score" type="checkbox" value="2">Another?
+        </div>
+        <div>
+            <select>
+                <option>Red</option>
+                <option>Orange</option>
+                <option>Yellow</option>
+                <option>Green</option>
+            </select>
+        </div>
+        <input type="color">
+        <input type="range" id="vol" min="0" max="50">
+        <hr>
+        first: <input id="first"><br>
+        second: <input id="second"><br>
+        <button onclick="addThem()">Add them!</button><br>
+        answer: <span id="answer"></span><br>
+    </body>
+</html>
