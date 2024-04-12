@@ -6,6 +6,11 @@ function pick() {
     // display the number
     let rnd = Math.floor(Math.random() * students.length);
     let selectedStudent = students[rnd];
-    console.log(document.getElementsByTagName("p").length);
-    document.getElementsByTagName("p")[0].textContent = selectedStudent;
+    // console.log(document.getElementsByTagName("p").length);
+    // document.getElementsByTagName("p")[0].textContent = selectedStudent;
+    // document.getElementById("selectedStudentPlace").textContent += selectedStudent;
+    let studentList = document.getElementById("selectedStudentPlace");
+    let newItem = document.createElement("li");
+    newItem.textContent = selectedStudent;
+    studentList.appendChild(newItem);
 }
