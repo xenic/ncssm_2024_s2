@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Collections</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="collections.css">
+    <script src="collections.js"></script>
+</head>
+
+<body>
+    <h1>Collections</h1>
+    <h2>Altering Collections of Elements</h2>
+
+    <p>Headlines: <button id="headLeft">Left</button> <button id="headCenter">Center</button> <button
+            id="headRight">Right</button></p>
+
+    <p>Paragraphs: <button id="parLeft">Left</button> <button id="parCenter">Center</button> <button
+            id="parRight">Right</button></p>
+
+    <p>Emphasized text (class = "emph"): <button id="emphPlain">Plain</button>
+        <button id="emphBold">Bold</button>
+    </p>
+
+    <h2>Using the Color Input</h2>
+
+    <p>Background Color: <input type="color" id="bgColor" value="#FFFFFF"></p>
+
+    <p>Text Color: <input type="color" id="textColor"></p>
+
+    <p>We can use an HTML collection to alter <span class="emph"> several</span> elements on a page at once. HTML
+        collections are list of elements returned by the methods <code>document.getElementsByTagName</code>
+        and <code>document.getElementsByClassName</code>.</p>
+
+    <p>Here you will change alignments of <span class="emph">headlines</span>
+        (h1 and h2) and <span class="emph">paragraphs</span> using the indicated
+        buttons.</p>
+
+    <p>You will also learn about a new input, <code>&lt;input type="color"&gt;</code>
+        which you will use to change the <span class="emph">color</span> of this page.</p>
+
+    <p>All of the buttons must work if material is added to this page.</p>
+
+</body>
+
+</html>

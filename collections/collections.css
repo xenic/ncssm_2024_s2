@@ -1,0 +1,12 @@
+h1,
+h2 {
+    text-align: center;
+}
+
+button {
+    border: 1px black solid;
+    background-color: inherit;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-variant: small-caps;
+}
